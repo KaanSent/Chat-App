@@ -18,6 +18,7 @@ const useSignup = () => {
 
         const data = await res.json();
         console.log(data)
+        toast.success("Account created successfully")
 
     }catch(error){
         toast.error(error.message)
